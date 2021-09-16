@@ -1,0 +1,22 @@
+http://localhost:3000/health-check
+
+###
+
+// ------------- TEST ADDRESS ---------------
+// 0x5e14ed9dCeE22ba758E8de482301028b261c4a14
+// 0xF1D8c2eED95D5fC2EaDe4E6Bb15a5969453E89a9
+// 0x89C51828427F70D77875C6747759fB17Ba10Ceb0
+// 0xf26d1Bb347a59F6C283C53156519cC1B1ABacA51
+
+### TTL: 15
+http://localhost:3000/get-single-address/0xF1D8c2eED95D5fC2EaDe4E6Bb15a5969453E89a9
+
+### TTL: 60
+POST http://localhost:3000/get-address HTTP/1.1
+content-type: application/json
+
+{
+    "ids": ["0x5e14ed9dCeE22ba758E8de482301028b261c4a14",
+            "0xF1D8c2eED95D5fC2EaDe4E6Bb15a5969453E89a9", "0x89C51828427F70D77875C6747759fB17Ba10Ceb0","0xf26d1Bb347a59F6C283C53156519cC1B1ABacA51"]
+}
+
